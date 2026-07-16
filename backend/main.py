@@ -8,7 +8,7 @@ from pydantic import BaseModel
 import models, schemas
 from database import engine, get_db
 
-# Tables auto-create ho jayengi agar already nahi hain (models.py ke basis pe)
+
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="HCP CRM - AI Log Interaction API")
