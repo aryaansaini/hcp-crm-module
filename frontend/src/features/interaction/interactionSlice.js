@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const API_URL = 'http://localhost:8000';
 
-// Async action: chat message backend ko bhejna
+
 export const sendChatMessage = createAsyncThunk(
   'interaction/sendChatMessage',
   async (message) => {
@@ -12,7 +12,7 @@ export const sendChatMessage = createAsyncThunk(
   }
 );
 
-// Async action: form submit karna (structured log)
+
 export const submitInteractionForm = createAsyncThunk(
   'interaction/submitInteractionForm',
   async (formData) => {
